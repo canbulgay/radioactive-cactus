@@ -5,5 +5,12 @@ import store from './store'
 import "@/assets/style.css";
 import appHeader from "@/components/Shared/appHeader";
 import appBookmarkList from "@/components/Shared/appBookmarkList";
+import appAxios from './utils/appAxios';
 
-createApp(App).component('appBookmarkList',appBookmarkList).component('appHeader',appHeader).use(store).use(router).mount('#app')
+createApp(App)
+.component('appBookmarkList',appBookmarkList)
+.component('appHeader',appHeader)
+.use(store)
+.use(router)
+.config.globalProperties.$appAxios = appAxios
+.mount('#app')
