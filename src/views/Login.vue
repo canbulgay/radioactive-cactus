@@ -6,7 +6,9 @@
       <button class="default-button">Sign In</button>
       <span class="text-center mt-3 text-sm">
         I am not a member,
-        <a href="#" class="text-red-900 hover:text-black">I want to be a member!</a>
+        <router-link :to="{ name : 'RegisterPage'}" class="text-red-900 hover:text-black">
+            Sign Up!
+        </router-link>
       </span>
     </div>
 </template>
