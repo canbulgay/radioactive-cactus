@@ -17,6 +17,11 @@ const routes = [
     name: 'RegisterPage',
     component: () => import("@/views/Register")
   },
+  {
+    path: '/new',
+    name: 'NewBookmarkPage',
+    component: () => import("@/views/NewBookmark")
+  },
 ]
 
 const router = createRouter({
