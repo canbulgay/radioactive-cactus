@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import store from "../store";
 
 const routes = [
   {
@@ -27,6 +28,21 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to, from , next) => {
+  const authRequiredRoutes = ["HomePage"];
+  const _isAuthenticated = store.getters._isAuthenticated;
+  const authNotRequiredRoutes = ["LoginPage","RegisterPage"];
+
+
+  if(authNotRequiredRoutes.indexOf(to.name) && _isAuthenticated) next(false);
+  if(authRequiredRoutes.indexOf(to.name) > -1){
+    if(_isAuthenticated) next();
+    else next({ name : "Login"});
+  }else {
+    next();
+  }
 })
 
 export default router
