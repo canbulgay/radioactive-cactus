@@ -1,5 +1,37 @@
 {
-    "users" : [],
-    "bookmarks" : [],
-    "categories" : []
+  "users": [
+    {
+      "username": "canbulgay",
+      "password": "fb35abedd29ebaf75776b906d05911202d50db7d",
+      "fullname": "canbulgay",
+      "id": 1
+    }
+  ],
+  "bookmarks": [],
+  "categories": [
+    {
+      "name": "Vue.js",
+      "id": 1
+    },
+    {
+      "name": "React.js",
+      "id": 2
+    },
+    {
+      "name": "Frontend",
+      "id": 3
+    },
+    {
+      "name": "Backend",
+      "id": 4
+    },
+    {
+      "name": "Cloud",
+      "id": 5
+    },
+    {
+      "name": "Social",
+      "id": 6
+    }
+  ]
 }
