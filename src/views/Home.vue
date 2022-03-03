@@ -3,7 +3,7 @@
   <div class="flex flex-row">
     <Sidebar />
 
-  <app-bookmark-list />
+  <app-bookmark-list :items="bookmarkList" />
   </div>
 
 </template>
@@ -13,6 +13,17 @@ import Sidebar from "@/components/Home/Sidebar"
 export default {
   components: {
     Sidebar
+  },
+  data(){
+    return {
+      bookmarkList : []
+    }
+  },
+  created(){
+    this.$appAxios.get("/bookmarks?_expand=category&_expand=user").then(bookmark_list_response => {
+      console.loog(bookmark_list_response);
+      this.bookmarkList = this.bookmark_list_response.data || []
+    })
   }
 }
 </script>

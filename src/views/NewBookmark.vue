@@ -3,7 +3,7 @@
       <h3 class="text-2xl text-center mb-3">Yeni Ekle</h3>
       <input autofocus ref="title" v-model="userData.title" type="text" placeholder="Başlık" class="input mb-3" />
       <input v-model="userData.url" type="text" placeholder="URL" class="input mb-3" />
-      <select v-model="userData.category_id" class="input mb-3">
+      <select v-model="userData.categoryId" class="input mb-3">
         <option disabled value="" selected>Kategori</option>
         <option v-for="category in categoryList" :key="category.id"> {{category.name}}</option>
       </select>
@@ -24,7 +24,7 @@ export default {
       userData : {
         title: null,
         url: null,
-        category_id : null,
+        categoryId : null,
         description : null,
       }
     };
@@ -42,13 +42,13 @@ export default {
     onSave(){
       const saveData = {
         ... this.userData,
-        user_id : this._getCurrentUser?.id,
+        userId : this._getCurrentUser?.id,
         created_at : new Date()
       }
       this.$appAxios.post("/bookmarks",saveData).then(save_bookmark_response => {
         console.log(save_bookmark_response);
         Object.keys(this.userData)?.forEach(field => this.userData[field] = null);
-        this.$router.push({name: "Homepage"});
+        this.$router.push({name: "Home"});
       })
     },
     computed : {

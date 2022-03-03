@@ -32,7 +32,7 @@ export default {
         .then(login_response => {
           if(login_response?.data?.length > 0 ){
             this.$store.commit("setUser",login_response?.data[0]);
-            this.$router.push({page: 'HomePage'});
+            this.$router.push({page: 'Home'});
           }
         })
         .catch(e => console.log(e))

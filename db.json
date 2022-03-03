@@ -7,7 +7,40 @@
       "id": 1
     }
   ],
-  "bookmarks": [],
+  "bookmarks": [
+    {
+      "title": null,
+      "url": null,
+      "categoryId": null,
+      "description": null,
+      "created_at": "2022-03-03T20:52:01.813Z",
+      "id": 1
+    },
+    {
+      "title": null,
+      "url": null,
+      "categoryId": null,
+      "description": null,
+      "created_at": "2022-03-03T20:52:02.679Z",
+      "id": 2
+    },
+    {
+      "title": null,
+      "url": null,
+      "categoryId": null,
+      "description": null,
+      "created_at": "2022-03-03T20:52:02.855Z",
+      "id": 3
+    },
+    {
+      "title": null,
+      "url": null,
+      "categoryId": null,
+      "description": null,
+      "created_at": "2022-03-03T20:52:02.999Z",
+      "id": 4
+    }
+  ],
   "categories": [
     {
       "name": "Vue.js",
