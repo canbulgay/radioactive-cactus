@@ -9,8 +9,8 @@
       </select>
       <textarea v-model="description" placeholder="Açıklama" class="input mb-3" cols="30" rows="10"></textarea>
       <div class="flex items-center justify-end gap-x-1">
-        <button @click="onSave" class="secondary-button">İptal</button>
-        <button class="default-button">Kaydet</button>
+        <button class="secondary-button">İptal</button>
+        <button @click.prevent="onSave()" class="default-button">Kaydet</button>
       </div>
     </div>
 </template>
@@ -48,7 +48,7 @@ export default {
       this.$appAxios.post("/bookmarks",saveData).then(save_bookmark_response => {
         console.log(save_bookmark_response);
         Object.keys(this.userData)?.forEach(field => this.userData[field] = null);
-        this.$router.push({name: "Home"});
+        this.$router.push("/");
       })
     },
     computed : {
