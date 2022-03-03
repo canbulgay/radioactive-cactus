@@ -30,13 +30,13 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach((to, from , next) => {
+router.beforeEach((to, _, next) => {
   const authRequiredRoutes = ["HomePage"];
   const _isAuthenticated = store.getters._isAuthenticated;
   const authNotRequiredRoutes = ["LoginPage","RegisterPage"];
 
 
-  if(authNotRequiredRoutes.indexOf(to.name) && _isAuthenticated) next(false);
+  if(authNotRequiredRoutes.indexOf(to.name) > -1 && _isAuthenticated) next(false);
   if(authRequiredRoutes.indexOf(to.name) > -1){
     if(_isAuthenticated) next();
     else next({ name : "Login"});

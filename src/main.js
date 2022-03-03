@@ -5,7 +5,7 @@ import store from './store'
 import "@/assets/style.css";
 import appHeader from "@/components/Shared/appHeader";
 import appBookmarkList from "@/components/Shared/appBookmarkList";
-import appAxios from '@/utils/appAxios';
+import {appAxios} from '@/utils/appAxios.js';
 
 const app = createApp(App);
 app.component('appBookmarkList',appBookmarkList);

@@ -31,9 +31,7 @@ export default {
         this.$appAxios.get(`/users?username=${this.userData.username}&password=${password}`)
         .then(login_response => {
           if(login_response?.data?.length > 0 ){
-
-            console.log(login_response);
-            this.$store.commit("setUser",login_response.data[0]);
+            this.$store.commit("setUser",login_response?.data[0]);
             this.$router.push({page: 'HomePage'});
           }
         })

@@ -30,14 +30,12 @@ export default {
     },
     methods : {
         onSave(){
-            const password = this.userData.password;
-            const cryptedPassword = CryptoJS.HmacSHA1(password, this.$store.getters._saltKey).toString();
+            const password = CryptoJS.HmacSHA1(this.userData.password, this.$store.getters._saltKey).toString();
             
-            this.$appAxios.post('/users', {... this.userData, password : cryptedPassword})
-            .then(registered_user_response => {
-                console.log("registered_user_response :>>", registered_user_response);
-                this.$router.push({name: 'HomePage'});
-            });
+     this.$appAxios.post("/users", { ...this.userData, password }).then(registered_user_response => {
+        console.log("registered_user_response :>> ", registered_user_response);
+        this.$router.push({ name: "HomePage" });
+      });
            // const decryptedPassword = CryptoJS.AES.decrypt(cryptedPassword , key).toString(CryptoJS.enc.Utf8);
         }   
     }
