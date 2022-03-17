@@ -2,67 +2,135 @@
   "users": [
     {
       "username": "canbulgay",
-      "password": "fb35abedd29ebaf75776b906d05911202d50db7d",
+      "password": "8f83b5fa78707cf23c8cb2fc6bb035bdd0127970",
       "fullname": "canbulgay",
-      "id": 1
+      "id": 2
+    }
+  ],
+  "user_bookmarks": [
+    {
+      "userId": 1,
+      "bookmarkId": 6,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "bookmarkId": 16,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "bookmarkId": 9,
+      "id": 6
     }
   ],
   "bookmarks": [
     {
-      "title": null,
-      "url": null,
-      "categoryId": null,
-      "description": null,
-      "created_at": "2022-03-03T20:52:01.813Z",
-      "id": 1
+      "title": "Yeni Yer İmi",
+      "url": "http://....",
+      "categoryId": 2,
+      "description": "aaaaa",
+      "userId": 1,
+      "created_at": "2021-09-01T18:31:14.532Z",
+      "id": 8
     },
     {
-      "title": null,
-      "url": null,
-      "categoryId": null,
-      "description": null,
-      "created_at": "2022-03-03T20:52:02.679Z",
-      "id": 2
+      "title": "tttt",
+      "url": "aaaaa",
+      "categoryId": 4,
+      "description": "ssssss",
+      "userId": 1,
+      "created_at": "2021-09-01T18:35:59.811Z",
+      "id": 9
     },
     {
-      "title": null,
-      "url": null,
-      "categoryId": null,
-      "description": null,
-      "created_at": "2022-03-03T20:52:02.855Z",
-      "id": 3
+      "title": "TestS",
+      "url": "http://...",
+      "categoryId": 1,
+      "description": "aaaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:37:57.630Z",
+      "id": 10
     },
     {
-      "title": null,
-      "url": null,
-      "categoryId": null,
-      "description": null,
-      "created_at": "2022-03-03T20:52:02.999Z",
-      "id": 4
+      "title": "denem",
+      "url": "http",
+      "categoryId": 2,
+      "description": "asdadasdad",
+      "userId": 1,
+      "created_at": "2021-09-01T18:41:07.474Z",
+      "id": 11
     },
     {
-      "title": "Enim cillum reprehen",
-      "url": "Quis iure ipsum vol",
-      "categoryId": "Social",
-      "description": null,
-      "created_at": "2022-03-03T20:59:55.140Z",
-      "id": 5
+      "title": "New Test",
+      "url": "http://",
+      "categoryId": 2,
+      "description": "aaaaaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:45:30.984Z",
+      "id": 12
     },
     {
-      "title": null,
-      "url": null,
-      "categoryId": null,
-      "description": null,
-      "created_at": "2022-03-03T20:59:58.423Z",
-      "id": 6
+      "title": "Deneme",
+      "url": "http://",
+      "categoryId": 1,
+      "description": "aaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:45:53.053Z",
+      "id": 13
     },
     {
-      "title": "Voluptatum dolor est",
-      "url": "Aliqua Repellendus",
-      "categoryId": "Frontend",
+      "title": "yen",
+      "url": "aaa",
+      "categoryId": 1,
+      "description": "sdfsdf",
+      "userId": 1,
+      "created_at": "2021-09-01T18:46:51.308Z",
+      "id": 14
+    },
+    {
+      "title": "deneme",
+      "url": "aaaaa",
+      "categoryId": 3,
+      "description": "asdasd",
+      "userId": 1,
+      "created_at": "2021-09-01T18:51:28.380Z",
+      "id": 15
+    },
+    {
+      "title": "Can Sarıgöl Oyun",
+      "url": "178....",
+      "categoryId": 1,
+      "description": "aaaaaaaaaaaa",
+      "userId": 2,
+      "created_at": "2021-09-01T18:52:14.559Z",
+      "id": 16
+    },
+    {
+      "title": "aaa",
+      "url": "fdghfggh",
+      "categoryId": 3,
+      "description": "fghfghfh",
+      "userId": 1,
+      "created_at": "2021-09-01T18:52:35.170Z",
+      "id": 17
+    },
+    {
+      "title": "Vue3 Bootcamp",
+      "url": "aaaa",
+      "categoryId": 5,
+      "description": "sdfsdfdsf",
+      "userId": 1,
+      "created_at": "2021-09-01T18:54:42.357Z",
+      "id": 18
+    },
+    {
+      "title": "Quis ipsum sint cons",
+      "url": "Anim velit labore vo",
+      "categoryId": "Sosyal Yaşam",
       "description": null,
-      "created_at": "2022-03-03T21:00:25.561Z",
-      "id": 7
+      "created_at": "2022-03-17T13:47:44.324Z",
+      "id": 19
     }
   ],
   "categories": [
@@ -87,7 +155,7 @@
       "id": 5
     },
     {
-      "name": "Social",
+      "name": "Sosyal Yaşam",
       "id": 6
     }
   ]
