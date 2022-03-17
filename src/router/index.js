@@ -23,6 +23,21 @@ const routes = [
     name: 'NewBookmarkPage',
     component: () => import("@/views/NewBookmark")
   },
+  {
+    path: '/favorites',
+    name: 'Favorites',
+    component: () => import("@/views/Account")
+  },
+  {
+    path: '/likes',
+    name: 'Likes',
+    component: () => import("@/views/Account")
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: () => import("@/views/Account")
+  },
 ]
 
 const router = createRouter({
