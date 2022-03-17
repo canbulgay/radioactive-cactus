@@ -35,7 +35,7 @@ const routes = [
   },
   {
     path: '/settings',
-    name: 'Settings',
+    name: 'Likes',
     component: () => import("@/views/Account")
   },
 ]
