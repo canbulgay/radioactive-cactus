@@ -67,7 +67,7 @@ export default {
   ,methods : {
     onLogout(){
       this.$store.commit("logoutUser");
-      this.$router.push({name : "Login"});
+      this.$router.push('/login');
     }
   }
 }

@@ -21,7 +21,6 @@ export default {
   },
   created(){
         this.$appAxios.get('/categories').then(category_response => {
-      console.log(category_response);
       this.categoryList = category_response?.data || [];
     }).catch(e => {
       console.log(e);

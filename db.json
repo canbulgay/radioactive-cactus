@@ -4,7 +4,11 @@
       "username": "canbulgay",
       "password": "8f83b5fa78707cf23c8cb2fc6bb035bdd0127970",
       "fullname": "canbulgay",
-      "id": 2
+      "id": 2,
+      "likes": [
+        9
+      ],
+      "bookmarks": []
     }
   ],
   "user_bookmarks": [
